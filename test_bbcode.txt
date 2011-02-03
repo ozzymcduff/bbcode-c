@@ -1,0 +1,16 @@
+1: sdfdskf h;as[] sdfa  sdf [psa] asdfdsf [b]fdsjahjkdsh sdf
+1: sdfdskf h;as[] sdfa  sdf [psa] asdfdsf <b>fdsjahjkdsh sdf</b>
+2: tersfda ldsfjlkdjsflkdsla
+2: tersfda ldsfjlkdjsflkdsla
+3: [b] asdfdsf [b]
+3: <b> asdfdsf <b></b></b>
+4:dsaf adsaf p] asdfdsf [b]
+4:dsaf adsaf p] asdfdsf <b></b>
+5: sdfdskf h;as[] sdfa  sdf [psa] asdfdsf [b]fdsjahjkdsh sdf
+5: sdfdskf h;as[] sdfa  sdf [psa] asdfdsf <b>fdsjahjkdsh sdf</b>
+6: sdfdskf h;as[b] sdfa[i] [/b] sdf[/i] [psa] asdfdsf [i][b]fdsjahjkdsh sdf
+6: sdfdskf h;as<b> sdfa<i> </i></b> sdf[/i] [psa] asdfdsf <i><b>fdsjahjkdsh sdf</b></i>
+7: sdfdskf h;as[b] sdfa[i]  sdf [psa] asdfdsf [i][b]fdsjahjkdsh sdf
+7: sdfdskf h;as<b> sdfa<i>  sdf [psa] asdfdsf <i><b>fdsjahjkdsh sdf</b></i></i></b>
+8:  sdfdskf h;as[color=black] sdfa  sdf [psa] 
+8:  sdfdskf h;as<span style="color:#000000" > sdfa  sdf [psa] </span>
