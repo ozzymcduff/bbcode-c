@@ -3,17 +3,20 @@ CC=gcc
 CFLAGS=-c -Wall -std=c99 -I./src/tests -I./src/lib 
 LDFLAGS= 
 MAKE=make
-SOURCES=main.c replace_bbcode.c test_bbcode.c
+LIBFILES=./src/lib/replace_bbcode.c 
+TESTFILES=./src/tests/main.c ./src/tests/test_bbcode.c
+CFILES=$(LIBFILES) $(TESTFILES)
+
+SOURCES = $(notdir $(CFILES))
 EXECUTABLE=testbbcode.exe
 BUILDDIR=./bin/debug/
 
 #LINT=lint -p
 OBJECTS=$(addprefix $(BUILDDIR),$(SOURCES:.c=.o))
-#OBJECTS=main.o replace_bbcode.o test_bbcode.o
 
 EXECUTABLEPATH=$(BUILDDIR)$(EXECUTABLE)
 
-all: $(EXECUTABLEPATH) 
+all: $(CFILES) $(EXECUTABLEPATH) 
 
 folder:
 	mkdir -p $(BUILDDIR)
@@ -29,13 +32,13 @@ clean:
 	rm $(EXECUTABLEPATH)
 	rmdir $(BUILDDIR)
 
-$(BUILDDIR)main.o: ./src/tests/main.c 
+$(BUILDDIR)main.o: ./src/tests/main.c folder
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(BUILDDIR)replace_bbcode.o: ./src/lib/replace_bbcode.c 
+$(BUILDDIR)replace_bbcode.o: ./src/lib/replace_bbcode.c folder
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(BUILDDIR)test_bbcode.o: ./src/tests/test_bbcode.c
+$(BUILDDIR)test_bbcode.o: ./src/tests/test_bbcode.c folder
 	$(CC) $(CFLAGS) -c $< -o $@
 
 #lint: $(SOURCES)
