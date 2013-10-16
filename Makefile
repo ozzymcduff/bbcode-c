@@ -4,7 +4,7 @@ CFLAGS=-c -Wall -std=c99
 LDFLAGS= 
 MAKE=make
 #SOURCES=*.c
-SOURCES=main.c replace_bbcode.c test_bbcode.c
+SOURCES=./src/tests/main.c ./src/lib/replace_bbcode.c ./src/tests/test_bbcode.c
 EXECUTABLE=testbbcode.exe
 BUILDDIR=./bin/debug/
 

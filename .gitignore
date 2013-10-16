@@ -1,3 +1,9 @@
 build/
 bin/
 .DS_Store
+*.opensdf
+Debug/
+*.suo
+ipch/
+*.sdf
+*.user
