@@ -27,7 +27,7 @@ test_file: folder
 $(EXECUTABLEPATH): $(OBJECTS) folder test_file
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-run: $(EXECUTABLEPATH)
+test: $(EXECUTABLEPATH)
 	cd $(BUILDDIR); ./$(EXECUTABLE);
 
 clean: 
