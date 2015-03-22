@@ -21,7 +21,10 @@ all: $(CFILES) $(EXECUTABLEPATH)
 folder:
 	mkdir -p $(BUILDDIR)
 
-$(EXECUTABLEPATH): $(OBJECTS) folder
+test_file: folder
+	cp ./src/tests/test_bbcode.txt $(BUILDDIR)
+
+$(EXECUTABLEPATH): $(OBJECTS) folder test_file
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
 run: $(EXECUTABLEPATH)

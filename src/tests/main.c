@@ -3,6 +3,7 @@
 #include "test_bbcode.h"
 int main (int argc, const char * argv[]) {
     // insert code here...
-  bbcode_testfixture("../../test_bbcode.txt"); // todo fix!!
+  
+  bbcode_testfixture("test_bbcode.txt"); 
   return 0;
 }
