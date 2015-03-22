@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0805A50DC9E0FA00E28232 /* replace_bbcode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E0805A30DC9E0FA00E28232 /* replace_bbcode.h */; };
-		4E0805A60DC9E0FA00E28232 /* replace_bbcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0805A40DC9E0FA00E28232 /* replace_bbcode.c */; };
-		4E0805A90DC9E22E00E28232 /* test_bbcode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E0805A70DC9E22E00E28232 /* test_bbcode.h */; };
-		4E0805AA0DC9E22E00E28232 /* test_bbcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0805A80DC9E22E00E28232 /* test_bbcode.c */; };
-		4E66DD4D0DCAD21F000A16BB /* test_bbcode.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E66DD4C0DCAD21F000A16BB /* test_bbcode.txt */; };
-		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
+		4E12F9811ABF403B00CF1BCA /* replace_bbcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E12F97F1ABF403B00CF1BCA /* replace_bbcode.c */; };
+		4E12F9861ABF405500CF1BCA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E12F9821ABF405500CF1BCA /* main.c */; };
+		4E12F9871ABF405500CF1BCA /* test_bbcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E12F9831ABF405500CF1BCA /* test_bbcode.c */; };
 		8DD76FB00486AB0100D96B5E /* bbCode.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* bbCode.1 */; };
 /* End PBXBuildFile section */
 
@@ -33,21 +30,18 @@
 			dstSubfolderSpec = 0;
 			files = (
 				8DD76FB00486AB0100D96B5E /* bbCode.1 in CopyFiles */,
-				4E0805A50DC9E0FA00E28232 /* replace_bbcode.h in CopyFiles */,
-				4E0805A90DC9E22E00E28232 /* test_bbcode.h in CopyFiles */,
-				4E66DD4D0DCAD21F000A16BB /* test_bbcode.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		4E0805A30DC9E0FA00E28232 /* replace_bbcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = replace_bbcode.h; sourceTree = "<group>"; };
-		4E0805A40DC9E0FA00E28232 /* replace_bbcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = replace_bbcode.c; sourceTree = "<group>"; };
-		4E0805A70DC9E22E00E28232 /* test_bbcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_bbcode.h; sourceTree = "<group>"; };
-		4E0805A80DC9E22E00E28232 /* test_bbcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_bbcode.c; sourceTree = "<group>"; };
-		4E66DD4C0DCAD21F000A16BB /* test_bbcode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_bbcode.txt; sourceTree = "<group>"; };
+		4E12F97F1ABF403B00CF1BCA /* replace_bbcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = replace_bbcode.c; path = src/lib/replace_bbcode.c; sourceTree = "<group>"; };
+		4E12F9801ABF403B00CF1BCA /* replace_bbcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = replace_bbcode.h; path = src/lib/replace_bbcode.h; sourceTree = "<group>"; };
+		4E12F9821ABF405500CF1BCA /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = src/tests/main.c; sourceTree = "<group>"; };
+		4E12F9831ABF405500CF1BCA /* test_bbcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = test_bbcode.c; path = src/tests/test_bbcode.c; sourceTree = "<group>"; };
+		4E12F9841ABF405500CF1BCA /* test_bbcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test_bbcode.h; path = src/tests/test_bbcode.h; sourceTree = "<group>"; };
+		4E12F9851ABF405500CF1BCA /* test_bbcode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test_bbcode.txt; path = src/tests/test_bbcode.txt; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* bbCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bbCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* bbCode.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = bbCode.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,12 +70,12 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				08FB7796FE84155DC02AAC07 /* main.c */,
-				4E0805A30DC9E0FA00E28232 /* replace_bbcode.h */,
-				4E0805A40DC9E0FA00E28232 /* replace_bbcode.c */,
-				4E0805A70DC9E22E00E28232 /* test_bbcode.h */,
-				4E0805A80DC9E22E00E28232 /* test_bbcode.c */,
-				4E66DD4C0DCAD21F000A16BB /* test_bbcode.txt */,
+				4E12F9821ABF405500CF1BCA /* main.c */,
+				4E12F9831ABF405500CF1BCA /* test_bbcode.c */,
+				4E12F9841ABF405500CF1BCA /* test_bbcode.h */,
+				4E12F9851ABF405500CF1BCA /* test_bbcode.txt */,
+				4E12F97F1ABF403B00CF1BCA /* replace_bbcode.c */,
+				4E12F9801ABF403B00CF1BCA /* replace_bbcode.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -129,9 +123,16 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "bbCode" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* bbCode */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76FAC0486AB0100D96B5E /* main.c in Sources */,
-				4E0805A60DC9E0FA00E28232 /* replace_bbcode.c in Sources */,
-				4E0805AA0DC9E22E00E28232 /* test_bbcode.c in Sources */,
+				4E12F9871ABF405500CF1BCA /* test_bbcode.c in Sources */,
+				4E12F9861ABF405500CF1BCA /* main.c in Sources */,
+				4E12F9811ABF403B00CF1BCA /* replace_bbcode.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,10 +173,6 @@
 		1DEB928708733DD80010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = "$(HOME)/bin";
@@ -189,9 +186,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -201,7 +199,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
